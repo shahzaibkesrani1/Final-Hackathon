@@ -2,7 +2,7 @@ import { Button } from "@mui/material";
 import { Modal } from "antd";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-
+import { AiOutlineUser } from "react-icons/ai";
 export default function Dashboard() {
   const [open, setOpen] = useState(false);
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -51,16 +51,14 @@ export default function Dashboard() {
         style={{ backgroundColor: "#1C4E80" }}
         aria-label="Sidebar"
       >
+         <div className="image-container ms-3">
+              <AiOutlineUser className="logo-icon" />
+              <h2 className="logo-text mt-1">Attendance App</h2>
+            </div>
         <div className="h-full px-3 pb-4 overflow-y-auto dark:bg-gray-800 p-10">
           <ul className="space-y-2 font-medium">
-            <div className="image-container">
-              <img
-                src="https://www.enerpize.com/wp-content/uploads/2019/08/Attendance-Hero.svg"
-                alt=""
-                className="image"
-              />
-            </div>
-            <div style={{ marginTop: "90px", lineHeight: "30px" }}>
+           
+            <div style={{ lineHeight: "30px" }}>
               <li>
                 <a
                   href="#"

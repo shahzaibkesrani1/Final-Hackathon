@@ -63,14 +63,18 @@ input:focus{
 
   .image-container {
     display: flex;
-    justify-content: center;
+    color: white ;
     align-items: center;
-    width: 100%;
-    max-width: 200px;
-    margin: 0 auto;
+    font-weight: 600;
+    margin-bottom: 30px;
   }
   
-  .image {
-    width: 100%; 
-    height: auto;
+  .logo-icon {
+    font-size: 1.76rem;
+    margin-right: 10px;
   }
+  
+  .logo-text {
+    font-size: 1.4rem;
+  }
+  
